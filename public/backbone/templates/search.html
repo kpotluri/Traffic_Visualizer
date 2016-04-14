@@ -1,0 +1,205 @@
+
+        <h2>Search Criteria</h2>
+        <div class="row" style="margin-top:10px;">
+          <span id="helpBlock" style="margin-left:15px;" class="help-block">Please select the search criteria and click search button to view the results.
+            If you wish to view results between two quantities, select "BETWEEN" from the dropdown and enter the range in the text box separated by a comma. For e.g.
+            if you wish to view results between 1 and 10, select "BETWEEN" in the dropdown and enter 1,10 in the text box. Similarly, if you wish to view results from
+            a set of quantities, select "IN" from the dropdown and enter the values separated by a comma in the text box. For e.g. if you wish to see results for values
+            1, 2 and 3, select "IN" from the dropdown and enter 1,2,3 in the text box.</span>
+        </div>
+        <div class="row" style="margin-top:30px;">
+          <div class="col-md-5 ">
+            <div class="col-md-4">
+              <label class="control-label input-sm" style="text-align:right;display:block;" for="search-source_ip">Source IP:</label>
+            </div>
+            <div class="col-md-3">
+              <select class="form-control input-sm" id="operation-source_ip">
+                  <option value="=">=</option>
+                  <option value="IN">IN</option>
+              </select>
+            </div>
+            <div class="col-md-5">
+              <input id="search-source_ip" class="form-control input-sm" type="text" data-type="text" value="">
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="col-md-4">
+              <label class="control-label input-sm" style="text-align:right;display:block;" for="search-destination_ip">Destination IP:</label>
+            </div>
+            <div class="col-md-3">
+              <select class="form-control input-sm" id="operation-destination_ip">
+                  <option value="=">=</option>
+                  <option value="IN">IN</option>
+              </select>
+            </div>
+            <div class="col-md-5">
+              <input id="search-destination_ip" class="form-control input-sm" type="text" data-type="text" value="">
+            </div>
+          </div>
+        </div>
+        <div class="row" style="margin-top:10px;">
+          <div class="col-md-5">
+            <div class="col-md-4">
+              <label class="control-label input-sm" style="text-align:right;display:block;" for="search-source_vn">Source VN:</label>
+            </div>
+            <div class="col-md-3">
+              <select class="form-control input-sm" id="operation-source_vn">
+                  <option value="=">=</option>
+                  <option value="IN">IN</option>
+              </select>
+            </div>
+            <div class="col-md-5">
+              <input id="search-source_vn" class="form-control input-sm" type="text" data-type="text" value="">
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="col-md-4">
+              <label class="control-label input-sm" style="text-align:right;display:block;" for="search-destination_vn">Destination VN:</label>
+            </div>
+            <div class="col-md-3">
+              <select class="form-control input-sm" id="operation-destination_vn">
+                  <option value="=">=</option>
+                  <option value="IN">IN</option>
+              </select>
+            </div>
+            <div class="col-md-5">
+              <input id="search-destination_vn" class="form-control input-sm" type="text" data-type="text" value="">
+            </div>
+          </div>
+        </div>
+        <div class="row" style="margin-top:10px;">
+          <div class="col-md-5">
+            <div class="col-md-4">
+              <label class="control-label input-sm" style="text-align:right;display:block;" for="search-source_port">Source Port:</label>
+            </div>
+            <div class="col-md-3">
+              <select class="form-control input-sm" id="operation-source_port">
+                  <option value="=">=</option>
+                  <option value="<"><</option>
+                  <option value=">">></option>
+                  <option value="IN">IN</option>
+              </select>
+            </div>
+            <div class="col-md-5">
+              <input id="search-source_port" class="form-control input-sm" type="text" data-type="int" value="">
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="col-md-4">
+              <label class="control-label input-sm" style="text-align:right;display:block;" for="search-destination_port">Destination Port:</label>
+            </div>
+            <div class="col-md-3">
+              <select class="form-control input-sm" id="operation-destination_port">
+                  <option value="=">=</option>
+                  <option value="<"><</option>
+                  <option value=">">></option>
+                  <option value="IN">IN</option>
+              </select>
+            </div>
+            <div class="col-md-5">
+              <input id="search-destination_port" class="form-control input-sm" type="text" data-type="int" value="">
+            </div>
+          </div>
+        </div>
+        <div class="row" style="margin-top:10px;">
+          <div class="col-md-5">
+            <div class="col-md-4">
+              <label class="control-label input-sm" style="text-align:right;display:block;" for="search-timestamp">Time Stamp:</label>
+            </div>
+            <div class="col-md-3">
+              <select class="form-control input-sm" id="operation-timestamp">
+                  <option value="=">=</option>
+                  <option value="<"><</option>
+                  <option value=">">></option>
+                  <option value="BETWEEN">BETWEEN</option>
+              </select>
+            </div>
+            <div class="col-md-5">
+              <input id="search-timestamp" class="form-control input-sm" type="text" data-type="int" value="">
+            </div>
+          </div>
+          <div class="col-md-5">
+            <!-- <label style="margin-right:10px; margin-left:10px;">Time Stamp:</label>
+            <input id="search-timestamp" type="text" data-operator="LIKE" value=""> -->
+          </div>
+        </div>
+        <div class="row" style="margin-top:10px;">
+          <div class="col-md-5">
+            <div class="col-md-4">
+              <label class="control-label input-sm" style="text-align:right;display:block;" for="search-direction_ingress">Direction Ingress:</label>
+            </div>
+            <div class="col-md-3">
+              <select class="form-control input-sm" id="operation-direction_ingress">
+                  <option value="=">=</option>
+                  <option value="IN">IN</option>
+              </select>
+            </div>
+            <div class="col-md-5">
+              <input id="search-direction_ingress" class="form-control input-sm" type="text" data-type="int" value="">
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="col-md-4">
+              <label class="control-label input-sm" style="text-align:right;display:block;" for="search-protocol">Protocol:</label>
+            </div>
+            <div class="col-md-3">
+              <select class="form-control input-sm" id="operation-protocol">
+                  <option value="=">=</option>
+                  <option value="<"><</option>
+                  <option value=">">></option>
+                  <option value="IN">IN</option>
+              </select>
+            </div>
+            <div class="col-md-5">
+              <input id="search-protocol" class="form-control input-sm" type="text" data-type="int" value="">
+            </div>
+          </div>
+        </div>
+        <div class="row" style="margin-top:10px;">
+          <div class="col-md-5">
+            <div class="col-md-4">
+              <label class="control-label input-sm" style="text-align:right;display:block;" for="search-sum_bytes_kb">Sum of Bytes:</label>
+            </div>
+            <div class="col-md-3">
+              <select class="form-control input-sm" id="operation-sum_bytes_kb">
+                  <option value="=">=</option>
+                  <option value="<"><</option>
+                  <option value=">">></option>
+                  <option value="BETWEEN">BETWEEN</option>
+              </select>
+            </div>
+            <div class="col-md-5">
+              <input id="search-sum_bytes_kb" class="form-control input-sm" type="text" data-type="int" value="">
+            </div>
+          </div>
+          <div class="col-md-5">
+
+          </div>
+        </div>
+        <div class="row" style="margin-top:10px;">
+          <div class="col-md-5">
+            <div class="col-md-4">
+              <label class="control-label input-sm" style="text-align:right;display:block;" for="search-sum_bytes_kb">Sum of Packets:</label>
+            </div>
+            <div class="col-md-3">
+              <select class="form-control input-sm" id="operation-sum_packets">
+                  <option value="=">=</option>
+                  <option value="<"><</option>
+                  <option value=">">></option>
+                  <option value="BETWEEN">BETWEEN</option>
+              </select>
+            </div>
+            <div class="col-md-5">
+              <input id="search-sum_packets" class="form-control input-sm" type="text" data-type="int" value="">
+            </div>
+          </div>
+          <div class="col-md-5">
+
+          </div>
+        </div>
+        <div class="row" style="margin-top:10px;">
+          <div class="col-md-5 col-md-offset-8">
+            <button class="btn btn-default" style="margin:10px;" id="clearSearch" type="submit">Clear</button>
+            <button class="btn btn-default" id="submitSearch" type="submit">Search</button>
+          </div>
+        </div>

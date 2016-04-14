@@ -1,0 +1,43 @@
+<html>
+<head>
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css">
+
+
+    <title>POC Network Monitoring</title>
+</head>
+
+<body>
+
+  <header >
+    <h1> Network Traffic Report </h1>
+    <br>
+  </header>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1 main">
+          <div id="region1"></div>
+          <div id="region2"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="backbone/js/external/require.js"></script>
+    <script src="backbone/js/api/base.js"></script>
+    <script type="text/javascript">
+        require(
+            ["jquery", "backbone/js/api/main-app.js"],
+            function($, MainApp) {
+                $(function() {
+                    var options = {};
+                    var mainApp = new MainApp();
+                    mainApp.start(options);
+                });
+            }
+        );
+    </script>
+</body>
+
+</html>
